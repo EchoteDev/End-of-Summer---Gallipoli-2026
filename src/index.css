@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Inter", system-ui, sans-serif; /* Forcing sans for display to match editorial */
+  --font-serif: "Playfair Display", Georgia, serif;
+
+  /* Sky mapped to primary */
+  --color-primary-950: #082f49;
+  --color-primary-900: #0c4a6e;
+  --color-primary-800: #075985;
+  --color-primary-700: #0369a1;
+  --color-primary-600: #0284c7;
+  --color-primary-500: #0ea5e9;
+  --color-primary-400: #38bdf8;
+  --color-primary-300: #7dd3fc;
+  --color-primary-200: #bae6fd;
+  --color-primary-100: #e0f2fe;
+  --color-primary-50: #f0f9ff;
+
+  /* Teal mapped to turquoise */
+  --color-turquoise-900: #134e4a;
+  --color-turquoise-800: #115e59;
+  --color-turquoise-700: #0f766e;
+  --color-turquoise-600: #0d9488;
+  --color-turquoise-500: #14b8a6;
+  --color-turquoise-400: #2dd4bf;
+  --color-turquoise-300: #5eead4;
+  --color-turquoise-200: #99f6e4;
+  --color-turquoise-100: #ccfbf1;
+  --color-turquoise-50: #f0fdfa;
+  
+  /* Amber mapped to sun */
+  --color-sun-900: #78350f;
+  --color-sun-800: #92400e;
+  --color-sun-700: #b45309;
+  --color-sun-600: #d97706;
+  --color-sun-500: #f59e0b;
+  --color-sun-400: #fbbf24;
+  --color-sun-300: #fcd34d;
+  --color-sun-200: #fde68a;
+  --color-sun-100: #fef3c7;
+  --color-sun-50: #fffbeb;
+
+  /* Slate mapped to gray */
+  --color-gray-950: #020617;
+  --color-gray-900: #0f172a;
+  --color-gray-800: #1e293b;
+  --color-gray-700: #334155;
+  --color-gray-600: #475569;
+  --color-gray-500: #64748b;
+  --color-gray-400: #94a3b8;
+  --color-gray-300: #cbd5e1;
+  --color-gray-200: #e2e8f0;
+  --color-gray-100: #f1f5f9;
+  --color-gray-50: #f8fafc;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--color-gray-50);
+  color: var(--color-gray-900);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  letter-spacing: -0.025em;
+}
